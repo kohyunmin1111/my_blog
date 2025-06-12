@@ -9,10 +9,6 @@ import { createServerSupabaseClient } from '@/lib/supabase-server';
 import PostEditForm from '@/components/admin/post-edit-form';
 import { Database } from '@/types/database.types';
 
-// 타입 정의
-type Post = Database['public']['Tables']['posts']['Row'];
-type Category = Database['public']['Tables']['categories']['Row'];
-
 // PostWithCategory 타입은 향후 확장을 위해 유지
 // type PostWithCategory = Post & {
 //   categories?: Category | null;

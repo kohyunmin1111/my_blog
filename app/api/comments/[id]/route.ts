@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
 import { auth } from '@clerk/nextjs/server';
 import { createServerSupabaseClient } from '@/lib/supabase-server';
-import type { Database } from '@/types/database.types';
 
 // 댓글 수정 (PUT)
 export async function PUT(request: Request, { params }: { params: Promise<{ id: string }> }) {

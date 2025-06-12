@@ -10,7 +10,6 @@ import { createServerSupabaseClient } from '@/lib/supabase-server';
 import { Database } from '@/types/database.types';
 
 // 댓글 테이블 타입 정의
-type Comment = Database['public']['Tables']['comments']['Row'];
 type CommentInsert = Database['public']['Tables']['comments']['Insert'];
 
 /**

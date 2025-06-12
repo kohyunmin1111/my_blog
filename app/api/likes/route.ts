@@ -1,7 +1,6 @@
 import { NextResponse } from 'next/server';
 import { auth } from '@clerk/nextjs/server';
 import { createServerSupabaseClient } from '@/lib/supabase-server';
-import type { Database } from '@/types/database.types';
 
 /**
  * 좋아요 상태 조회 (GET)
